@@ -6,12 +6,15 @@ import { AuthComponent } from './auth.component';
 const routes: Routes = [
   {
     path: '',
-    component: AuthComponent
+    component: AuthComponent,
+    pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AuthComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
