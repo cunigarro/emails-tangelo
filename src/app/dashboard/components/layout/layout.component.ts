@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: './dashboard.component.html',
+  selector: 'layout',
+  templateUrl: './layout.component.html',
   styles: [`
     :host {
       height: 100%;
       position: absolute;
       width: 100%;
+      display: flex;
+      flex-direction: column;
     }
   `]
 })
-export class DashboardComponent implements OnInit {
+export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { }

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dasboard.routing';
 import { DashboardComponent } from './dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,
